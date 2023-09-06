@@ -1,0 +1,578 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#nav {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+    background-color: #F3F3F3;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+
+}
+
+#logoimg {
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    background-color: #A1F75E;
+}
+#logoimg img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 90%;
+    /* border-radius: 50%; */
+    object-fit:cover;
+    object-position: center;
+}
+
+#logoname {
+    font-weight: 800;
+    font-size: 1.5vw;
+}
+
+#navigation {
+    display: flex;
+    align-items: center;
+    gap: 5vh;
+}
+
+#navigation a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.3vw;
+    font-weight: 600;
+}
+
+#login button {
+    padding: 1vh 5vh;
+    border-radius: 30px;
+    border: none;
+    font-size: 1.1vw;
+    font-weight: 600;
+    background-color: #A1F75E;
+}
+
+#page1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #00102F;
+}
+
+#page1left {
+    position: relative;
+    width: 70vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./Images/wepik-export-20230627211444gJAd.jpeg);
+    /* margin-left: -10vw; */
+}
+
+#page1left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#page1right {
+    width: 30vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00102D;
+}
+
+#page1right h1 {
+    font-size: 55vw;
+    color: #021e4286;
+}
+
+#page1text {
+    position: absolute;
+    right: -25%;
+    top: 22%;
+    display: flex;
+    flex-direction: column;
+    gap: 5vw;
+    /* background-color: red; */
+    color: #fff;
+    margin-left: 120vh;
+}
+
+#page1text h1 {
+    font-size: 6.3vw;
+    line-height: 7vw;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#page1text p {
+    font-size: 1.1vw;
+    line-height: 1.2vw;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+#page1text>button {
+    width: 35%;
+    border-radius: 30px;
+    padding: 2vh;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.2vw;
+    border: 3px solid #A1F75E;
+}
+
+#smallpage1 {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center !important;
+    gap: 4.8vw;
+    flex-wrap: wrap;
+    background-color: #00183C;
+}
+
+#smallpage1 h1 {
+    color: #fff;
+    letter-spacing: 2vh;
+    text-transform: uppercase;
+}
+
+#page2 {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F3F3F3;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+#page2left {
+    width: 55%;
+    padding: 8vh 14vh;
+    display: flex;
+    flex-direction: column;
+    gap: 13vh;
+}
+
+#about1 {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+#about1 h2 {
+    text-transform: uppercase;
+    color: #0850AC;
+    font-weight: 600;
+    font-size: 1.7vw;
+    letter-spacing: 1.1vh;
+}
+
+#about1 h4 {
+    text-transform: capitalize;
+    font-size: 2.8vw;
+}
+
+#about1 p {
+    width: 80%;
+    font-size: 1.1vw;
+    font-weight: 400;
+    color: #A2A1A2;
+}
+
+#about2 {
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    background-color: #ECEBEB;
+    border-radius: 15px;
+   padding: 5vh 1vh;
+}
+
+.aboutstext h1 {
+    width: fit-content;
+    font-weight: 600;
+    margin-bottom: 4vh;
+
+
+}
+
+.aboutstext p {
+    font-weight: 400;
+    width: 100%;
+    color: #A2A1A2;
+
+}
+
+.aboutsimg {
+    width: 100vh;
+    height: 30vh;
+    /* background-color: red; */
+}
+.aboutsimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center ;
+}
+
+#about3 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-color: #ECEBEB;
+    border-radius: 15px;
+    padding: 5vh 1vh;
+    
+    
+}
+
+#f {
+    /* flex-shrink: 0; */
+    margin-left: 5vh;
+}
+#f p{
+    width: 100%;
+}
+#page2sircle{
+    width: 40vh;
+    height: 40vh;
+    /* background-color: red; */
+    border-radius: 50%;
+}
+
+#page2right {
+    width: 45%;
+    height: 130vh;
+    background-image: url(./Images/wepik-export-20230701222312uEqU-removebg-preview.png);
+    background-position: center;
+    background-size: cover;
+}
+#page3{
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+    padding: 10vh 15vh;
+}
+#page3topic{
+   display: flex; 
+   align-items: center;
+   justify-content: space-between;
+}
+#page3topic h1{
+    font-size: 2.5vw;
+    font-weight: 700;
+}
+#page3topic h2{
+    font-size: 2vw;
+    font-weight: 600;
+    color: #A1F75E;
+    cursor: pointer;
+}
+#products{
+    margin-top: 10vh;
+    width: 100%;
+    height: 70vh;
+    background-color: #ecebeb40;
+    border-radius: 10px;
+    display: flex;
+    padding: 2vh;
+    gap: 30px;
+}
+.productcard{
+    width: 25%;
+    /* background-color: red; */
+    height: 100%;
+}
+.productimg{
+    width: 100%;
+    height: 55%;
+    /* background-color: yellow; */
+}
+.productimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.pname{
+     text-align: center;
+     color: #A2A1A2;
+     margin-top: 2vh;
+     font-size: 1.2vw;
+     text-transform: uppercase;
+}
+.review{
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+   /* background-color: red; */
+   padding: 0 11vh;
+   margin-top: 2vh;
+}
+.review h4{
+    font-weight: 500;
+    font-size: 1vw;
+}
+.review h2{
+    color: #c3c3c3;
+    font-weight: 300;
+    font-size: 1vw;
+
+}
+.review h5{
+    font-weight: 500;
+    font-size: 1vw;
+
+}
+.productsdets{
+    /* background-color: red; */
+    margin-top: 3vh;
+    text-align: center;
+}
+.productsdets h6{
+    font-weight: 600;
+    font-size: 1.5vw;
+
+}
+.price{
+    /* background-color: red; */
+    text-align: center;
+    margin-top: 3vh;
+}
+.price>button {
+    width: 60%;
+    border-radius: 30px;
+    padding: 1vh;
+    font-weight: 600;
+    background-color: transparent;
+    color: #000000;
+    font-size: 1.2vw;
+    border: 3px solid #A1F75E;
+}
+#page4{
+    padding: 10vh 5vh;
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: red; */
+    position: relative;
+    overflow: hidden;
+}
+#page4ttext{
+   /* background-color: yellow; */
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   gap: 3vh;
+}
+#page4ttext h1{
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1vh;
+    color: #0850AC;
+}
+#page4ttext h2{
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 2.5vw;
+}
+.professionalsdets{
+    width: 28%;
+    height: 80vh;
+    /* background-color: red; */
+}
+.trainalpics{
+    width: 100%;
+    height: 65vh;
+    border-radius: 1vh;
+    overflow: hidden;
+    position: relative;
+    overflow: hidden;
+    /* background-color: yellow; */
+}
+.trainalpics img{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+#alltraines{
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+    padding: 6vh;
+    padding-left: 10vh;
+    margin-bottom: 15vh;
+}
+.trainersdets{
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+.trainersdets h1{
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1.8vw;
+}
+
+.trainersdets h2{
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1.2vw;
+    color: #A2A1A2;
+
+}
+.trainersdets h4{
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1.2vw;
+    color: #0850AC;
+
+}
+#page5{
+    width: 100%;
+    height: 60vh;
+    background-image: url(./Images/Marcus\ Eriksson.jpg);
+ background-position: center;
+    background-size: cover;
+    /* background-color: rgb(87, 87, 87); */
+}
+#contact{
+    width: 100%;
+    height: 15vh;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact{
+    width: 50%;
+    margin-top: -7.5%;
+    height: 15vh;
+    border-radius: 50px;
+    box-shadow: 0 0 10px #00000047;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    background-color: rgb(255, 255, 255);
+}
+.contact h1{
+    text-transform: uppercase;
+    color: #0850AC;
+    letter-spacing: 1vh;
+    font-size: 1.5vw;
+    font-weight: 600;
+    margin-top: 3vh;
+}
+.contact h2{
+    text-transform: capitalize;
+    font-size: 1.8vw;
+    font-weight: 700;
+}
+#footer{
+    width: 100%;
+    height: 40vh;
+    background-color: #00183C;
+    color: #fff;
+    display: flex;
+}
+#footerleft{
+    padding: 5vh;
+    width: 50%;
+    height: 100%;
+}
+
+#footerleft p{
+     width: 70%;
+     margin-top: 4vh;
+     margin-left: 2vh;
+     color: #c3c3c3;
+}
+.logoname{
+    color: #fff;
+}
+#footerleft a{
+    text-decoration: none;
+    color: #000;
+    display: block;
+    margin-top: 3vh;
+    font-size: 1.4vw;
+    font-weight: 600;
+    color: #A1F75E;
+}
+
+#footerright{
+    /* text-align: right; */
+    padding: 5vh 15vw;
+    width: 50%;
+    height: 100%;
+    /* background-color: yellow; */
+}
+#footerright h1{
+    font-size: 2.5vw;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+#footerright input{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    padding: 1vmax 2vmax;
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+#footerright button{
+    padding: .7vmax 2vmax;
+    border-radius: 20px;
+    border: none;
+    color: #000;
+    background-color: #A1F75E;
+    display: block;
+    margin-bottom: 3vh;
+}
+#footerright a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 2vw;
+    margin-right: 2vh;
+}
